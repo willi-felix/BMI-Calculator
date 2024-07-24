@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/styles.css') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/icon.png') }}">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h1>BMI Calculator</h1>
+            <form method="POST">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" name="weight" required>
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" name="height" required>
+                <button type="submit">Calculate</button>
+            </form>
+            {% if bmi %}
+            <div class="result">
+                <p>Your BMI is: {{ bmi|round(2) }}</p>
+                <p>{{ category }}</p>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+        <footer>
+            <p>&copy; <span id="current-year"></span> Moodles Inc. All rights reserved.</p>
+        </footer>
+
+    <script>
+        // JavaScript để tự động cập nhật năm hiện tại
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
