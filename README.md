@@ -11,7 +11,7 @@ Welcome to the BMI Calculator app, a product of Moodles Inc. This application pr
 
 ## Screenshots
 
-![BMI Calculator Screenshot](./static/img.PNG)
+![BMI Calculator Screenshot](hello)
 
 ## Installation
 
@@ -20,4 +20,4 @@ To get started with the BMI Calculator app, follow these steps:
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/yourusername/bmi-calculator.git
+   git clone https://github.com/willi-felix/BMI-Calculator.git
