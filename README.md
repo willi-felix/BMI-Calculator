@@ -11,7 +11,7 @@ Welcome to the BMI Calculator app, a product of Moodles Inc. This application pr
 
 ## Screenshots
 
-![BMI Calculator Screenshot](path_to_screenshot_image)
+![BMI Calculator Screenshot](./static/img.jpg)
 
 ## Installation
 
